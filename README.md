@@ -1,64 +1,46 @@
 # Machine Learning Engineer
 
-**A focused route from useful Python to careful machine learning and NLP.**
+**A focused, evidence-led path from Python and data foundations to classical ML, algorithms from scratch, and NLP.**
 
-I’m building this repository as a working study record: each topic should leave me with something I can explain, implement, evaluate, and improve. It is deliberately limited to seven sections. The rest of my learning areas can live in separate repositories when I am ready to build them properly.
+I’m building this repository as a working study record. Each section is meant to help me explain the idea, implement or apply it, evaluate it honestly, and show what I learned. The scope is intentionally limited to the seven sections below; other areas can live in separate repositories later.
 
-> **Status:** In progress  
-> **Approach:** Learn the idea → make a small implementation → test it → write down what I learned
+## Learning path
 
-## The seven sections
+| # | Section | What the guide covers |
+|---|---|---|
+| 00 | [Roadmap](00-roadmap/README.md) | Prerequisites, study sequence, milestones, and evidence of progress |
+| 01 | [Python for ML](01-python-for-ml/README.md) | Core Python, complexity, NumPy shapes, pandas, visualization, tests, reproducibility |
+| 02 | [Mathematics for ML](02-mathematics-for-ml/README.md) | Linear algebra, gradients, probability, statistics, optimization, numerical stability |
+| 03 | [Data Analysis & Engineering](03-data-analysis-engineering/README.md) | Data contracts, profiling, SQL, leakage, feature pipelines, honest splits |
+| 04 | [Machine Learning](04-machine-learning/README.md) | Problem framing, baselines, core models, generalization, metrics, evaluation |
+| 05 | [Advanced Machine Learning](05-advanced-machine-learning/README.md) | Ensembles, tuning, imbalance, calibration, interpretation, robustness, drift |
+| 06 | [Algorithms from Scratch](06-ml-algorithms-from-scratch/README.md) | NumPy implementations, derivations, numerical checks, complexity, reference comparisons |
+| 07 | [Natural Language Processing](07-natural-language-processing/README.md) | Text inspection, TF-IDF, tokenization, transformers, evaluation, error analysis |
 
-| Section | What I want to get good at |
-|---|---|
-| [00 · Roadmap](00-roadmap/README.md) | A clear sequence and evidence for progress |
-| [01 · Python for ML](01-python-for-ml/README.md) | Readable Python, NumPy, pandas, testing, and packaging |
-| [02 · Mathematics for ML](02-mathematics-for-ml/README.md) | The linear algebra, calculus, probability, and optimization behind models |
-| [03 · Data Analysis & Engineering](03-data-analysis-engineering/README.md) | Turning raw data into trustworthy, leakage-safe datasets |
-| [04 · Machine Learning](04-machine-learning/README.md) | Framing problems, choosing baselines, and evaluating models honestly |
-| [05 · Advanced Machine Learning](05-advanced-machine-learning/README.md) | Ensembles, tuning, interpretation, imbalance, and robustness |
-| [06 · Algorithms from Scratch](06-ml-algorithms-from-scratch/README.md) | Making the mechanics visible with small NumPy implementations |
-| [07 · Natural Language Processing](07-natural-language-processing/README.md) | Moving from text features to modern NLP models and error analysis |
+## How I study each topic
 
-## How I work through a topic
+For every substantial topic, I try to leave a trail another person can follow:
 
-I start with a question the model is supposed to answer. Then I write down the data assumptions, build the simplest baseline that could work, and choose a metric that matches the cost of being wrong. Only after that do I add complexity.
+1. **Question and assumptions:** What problem is being solved? What must be true of the data?
+2. **Explanation:** What is the central idea, in my own words?
+3. **Working evidence:** A derivation, small implementation, experiment, or analysis.
+4. **Checks:** Tests, baselines, leakage checks, numerical checks, or reference comparisons.
+5. **Reflection:** What failed, what trade-off appeared, and what I would investigate next.
 
-For each substantial topic, I aim to keep four pieces of evidence together:
+A score without a split definition, metric meaning, and comparison baseline is not enough. A from-scratch implementation without edge-case checks is not enough either.
 
-1. A short explanation in my own words.
-2. A reproducible implementation or experiment.
-3. Tests or checks for edge cases and data leakage.
-4. Results, limitations, and the next question I would investigate.
+## Repository principles
 
-## Repository map
+- Start with a simple baseline and define the evaluation protocol before tuning.
+- Fit preprocessing only on training folds; keep final test data out of model selection.
+- Write down dimensions and data assumptions before implementing equations.
+- Choose metrics from the errors that matter in the intended use.
+- Compare educational implementations with trusted libraries on controlled examples.
+- Keep claims proportional to the code and evidence actually present here.
 
-```text
-machine-learning-engineer/
-├── 00-roadmap/
-├── 01-python-for-ml/
-├── 02-mathematics-for-ml/
-├── 03-data-analysis-engineering/
-├── 04-machine-learning/
-├── 05-advanced-machine-learning/
-├── 06-ml-algorithms-from-scratch/
-├── 07-natural-language-processing/
-├── resources/
-├── tests/
-└── .github/
-```
+## Resources
 
-## Reading shelf
-
-The [resource notes](resources/README.md) are curated around this exact scope. The [book plan](resources/books.md) gives my preferred order, which chapters I intend to focus on, and what I want each book to help me answer.
-
-## Principles I want the work to show
-
-- Start with a baseline and keep the test set untouched until the end.
-- Treat data quality and leakage checks as part of modeling.
-- Explain why a metric fits the problem; do not report a score without context.
-- Compare a hand-built algorithm with a trusted implementation on controlled cases.
-- Keep claims proportional to the code and evidence actually in the repository.
+The [reading shelf](resources/README.md) links books, courses, documentation, and papers aligned to this scope. The [book plan](resources/books.md) suggests an order and explains what I want each book to help me answer.
 
 ## Connect
 
