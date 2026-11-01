@@ -105,7 +105,7 @@ The following are planned project tracks. A project should only be marked comple
 ## Connect
 
 - GitHub: [@Saty290501](https://github.com/Saty290501)
-- Portfolio: [Saty290501.github.io](https://Saty290501.github.io)
+- Portfolio: [satyenchaudhari.github.io](https://satyenchaudhari.github.io)
 
 If you find an issue or have a thoughtful improvement, feel free to open an issue or discussion.
 
