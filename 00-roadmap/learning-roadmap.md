@@ -1,28 +1,25 @@
-# Learning Roadmap
+# Learning roadmap
 
-## Suggested sequence
+## Suggested order
 
-| Phase | Focus | Exit criteria |
+| Phase | Sections | Exit question |
 |---|---|---|
-| 1 | Python, math, data foundations | Reusable data workflow, tested Python utilities, math derivations |
-| 2 | Classical and advanced ML | Baseline/champion comparison, leakage-safe evaluation |
-| 3 | Algorithms from scratch | Tested NumPy implementations and library comparisons |
-| 4 | Deep learning, NLP, computer vision | Reproducible training runs and error analysis |
-| 5 | LLMs and RAG | Measured retrieval and generation quality |
-| 6 | Agentic AI and system design | Bounded tool workflow and architecture documents |
-| 7 | MLOps and deployment | Dockerized API, CI, experiment tracking, monitoring plan |
-| 8 | Portfolio projects | Three to five polished end-to-end systems |
+| Foundations | Python for ML → Mathematics for ML → Data Analysis & Engineering | Can I prepare and inspect a dataset without hiding assumptions in notebook state? |
+| Modeling | Machine Learning → Advanced Machine Learning | Can I defend the baseline, split strategy, metric, and final model choice? |
+| Mechanics | Algorithms from Scratch | Can I explain what the algorithm computes and show where my implementation fails? |
+| Text | Natural Language Processing | Can I compare a transparent text baseline with a stronger model and explain the errors? |
 
-## Weekly execution loop
+## The experiment log
 
-1. Pick one narrow learning outcome.
-2. Read and summarize the concept in your own words.
-3. Implement a minimal working example.
-4. Add tests and run a controlled experiment.
-5. Write down what failed and what changed.
-6. Commit a focused change with a meaningful message.
+For each experiment, I keep a compact record:
+
+- **Question:** What am I trying to learn?
+- **Data:** Where did it come from, and what could be missing or misleading?
+- **Baseline:** What is the simplest result worth comparing against?
+- **Protocol:** How are the split, preprocessing, and metric defined?
+- **Result:** What changed, including the failures?
+- **Next step:** What single follow-up would reduce the most uncertainty?
 
 ## Definition of done
 
-A topic is not complete because a notebook ran once. It is complete when another engineer can understand the goal, reproduce the result, inspect the evaluation, and see the known limitations.
-
+A result is ready to keep when its explanation, code, checks, and evaluation agree with each other. If the README says more than the experiment proves, I revise the README.

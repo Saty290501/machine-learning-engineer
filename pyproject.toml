@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning-engineer"
-version = "0.1.0"
-description = "Hands-on machine learning engineering roadmap and experiments"
+version = "0.2.0"
+description = "A focused ML foundations and NLP study roadmap"
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26",
@@ -12,7 +12,6 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.3", "mypy>=1.8"]
-deep-learning = ["torch"]
 notebooks = ["jupyterlab", "ipykernel"]
 
 [tool.pytest.ini_options]
@@ -21,4 +20,3 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 100
 target-version = "py310"
-
